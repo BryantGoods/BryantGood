@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ... (bagian head tidak diubah) ... -->
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="logo-bg.jpg" alt="Logo">
+      <span>Bryant Goods</span>
+    </div>
+  </nav>
+
+  <header>
+    <img src="logo-bg.jpg" alt="Logo">
+    <h1>Jasa Joki MLBB</h1>
+    <p>Push Rank Kamu Sampai Mythic Imortal dengan Harga Terjangkau</p>
+    <a href="#pesan" class="cta-button">Pesan Sekarang</a>
+  </header>
+
+  <section class="section">
+    <h2>Paket Harga</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Master</h3>
+        <p>Rp 3.000 / star</p>
+      </div>
+      <div class="card">
+        <h3>Grandmaster</h3>
+        <p>Rp 4.000 / star</p>
+      </div>
+      <div class="card">
+        <h3>Epic</h3>
+        <p>Rp 5.000 / star</p>
+      </div>
+      <div class="card">
+        <h3>Legend</h3>
+        <p>Rp 7.000 / star</p>
+      </div>
+      <div class="card">
+        <h3>Grading (10 win full)</h3>
+        <p>Rp 130.000</p>
+      </div>
+      <div class="card">
+        <h3>Mythic</h3>
+        <p>Rp 12.000 / star</p>
+      </div>
+      <div class="card">
+        <h3>Mythic Honor</h3>
+        <p>Rp 14.000 / star</p>
+      </div>
+      <div class="card">
+        <h3>Mythical Glory</h3>
+        <p>Rp 19.000 / star</p>
+      </div>
+      <div class="card">
+        <h3>Mythic Immortal</h3>
+        <p>Rp 24.000 / star</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pesan" class="section">
+    <!-- ... form tetap ... -->
+  </section>
+
+  <section class="section">
+    <!-- ... testimoni tetap ... -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bryant Goods. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/6283113134803" class="wa-float">Chat WA</a>
+
+  <script>
+    function redirectWA() {
+      const nama = document.getElementById('nama').value;
+      const awal = document.getElementById('rankAwal').value;
+      const tujuan = document.getElementById('rankTujuan').value;
+      const wa = document.getElementById('whatsapp').value;
+      const text = `Halo saya ${nama}, ingin joki dari ${awal} ke ${tujuan}. Nomor saya: ${wa}`;
+      const encoded = encodeURIComponent(text);
+      window.open(`https://wa.me/6283113134803?text=${encoded}`, '_blank');
+      return false;
+    }
+  </script>
+</body>
+</html>
